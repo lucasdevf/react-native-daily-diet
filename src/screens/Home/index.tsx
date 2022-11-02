@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import { Plus } from "phosphor-react-native";
 import { FlatList } from "react-native";
 import { Button } from "../../components/Button";
@@ -7,6 +8,7 @@ import { Percent } from "../../components/Percent";
 import { HomeContainer, Label, Meals } from "./styles";
 
 export function Home() {
+  const navigation = useNavigation()
 
   const meals: MealProps[] = [
     {
@@ -63,7 +65,10 @@ export function Home() {
     <HomeContainer>
       <HeaderHome />
 
-      <Percent showExpandButton />
+      <Percent 
+        showExpandButton
+        onPress={() => navigation.navigate('statistics')} 
+      />
 
       <Meals>
         <Label>Refeições</Label>
