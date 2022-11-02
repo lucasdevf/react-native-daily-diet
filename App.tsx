@@ -6,7 +6,7 @@ import {
 } from '@expo-google-fonts/nunito-sans';
 import { StatusBar, Text } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
-import { Home } from './src/screens/Home';
+import { Statistics } from './src/screens/Statistics';
 import { theme } from './src/styles/theme';
 
 export default function App() { 
@@ -24,7 +24,7 @@ export default function App() {
         translucent
       />
 
-      { fontsLoaded ? <Home /> : <Text>Carregando...</Text>}
+      { fontsLoaded ? <Statistics /> : <Text>Carregando...</Text>}
     </ThemeProvider>
   )
 }

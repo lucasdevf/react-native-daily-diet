@@ -63,7 +63,7 @@ export function Home() {
     <HomeContainer>
       <HeaderHome />
 
-      <Percent />
+      <Percent showExpandButton />
 
       <Meals>
         <Label>Refeições</Label>

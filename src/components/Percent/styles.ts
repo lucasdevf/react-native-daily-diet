@@ -32,11 +32,21 @@ export const Label = styled.Text`
   `}
 `
 
-export const IconArrow = styled(ArrowUpRight).attrs(({ theme }) => ({
+export const IconExpand = styled(ArrowUpRight).attrs(({ theme }) => ({
   color: theme.COLORS.GREEN_500,
   weight: 'bold'
 }))`
   position: absolute;
   top: 16px;
-  right: 16px;
+  right: 24px;
+`
+
+export const ButtonGoBack = styled.TouchableOpacity`
+  position: absolute;
+  top: 0;
+  left: 24px;
+
+  background-color: ${({ theme }) => theme.COLORS.GREEN_300};
+  padding: 8px;
+  border-radius: 999px;
 `
